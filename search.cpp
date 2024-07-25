@@ -2,17 +2,23 @@
 using namespace std;
 
 int main(){
-    //Linear Search
+    //Binary Search
     vector<int> arr = {1,2,3,4,5,6,7,8,9,10};
     int target = 9;
-    for(int i=0;i<arr.size();i++){
-        if(arr[i] == target){
-            cout<<"The index of the target is :"<<i<<endl;
+    int l = 0, r = arr.size()-1;
+    while(l<=r){
+        int mid = l + (r-l)/2;
+        if(arr[mid] == target){
+            cout<<"The index of the target is :"<<mid<<endl;
             break;
         }
+        else if(arr[mid] < target){
+            l = mid+1;
+        }
+        else{
+            r = mid-1;
+        }
     }
-   
-
     return 0;
 
 }
