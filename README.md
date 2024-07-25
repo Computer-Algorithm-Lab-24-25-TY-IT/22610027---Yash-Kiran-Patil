@@ -1,7 +1,8 @@
 # 22610027---Yash-Kiran-Patil
 
 <h3>The program of finding the element using binary search</h3>
-![Screenshot from 2024-07-25 10-56-24](https://github.com/user-attachments/assets/2ce28843-b2f7-4a91-a06b-35c55deaafe3)
+
+
 
 <h3>The output of analysis.out</h3>
 
