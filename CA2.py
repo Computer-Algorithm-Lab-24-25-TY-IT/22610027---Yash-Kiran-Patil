@@ -197,9 +197,6 @@ def main():
     decompressed_data = recorder.decompress_moves(compressed_data)
     print("Decompressed moves:", decompressed_data)
 
-    rotations = [move[5] for move in recorder.get_moves() if move[2] == move[4] and move[3] == move[5]]  
-    min_operations = optimize_rotations(rotations)
-    print("Minimum operations for rotation calculations:", min_operations)
 
 if __name__ == "__main__":
     main()
